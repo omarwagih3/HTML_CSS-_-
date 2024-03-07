@@ -143,7 +143,7 @@ a:link {
   color: #2fa39f;
   text-decoration: none;
   margin-right: 16px;
-  margin-top: 14px;
+
   display: inline-block;
 }
 
@@ -174,7 +174,7 @@ a:active {
 
 ul,
 ol {
-  margin-left: 50px;
+  margin-left: 33px;
   margin-bottom: 20px;
 }
 
@@ -198,9 +198,6 @@ h2::after {
   margin: 40px;
   margin-top: 15px;
   display: inline-block;
-}
-
-.seberator {
 }
 
 /* RTL styles */
@@ -240,6 +237,10 @@ h2::after {
 [dir="rtl"] .seberator {
   margin-left: 16px;
   margin-right: 16px;
+}
+
+[dir="rtl"] .related {
+  margin-right: 33px;
 }
 
 /* resolving conflicts */
@@ -283,7 +284,7 @@ li::before {
 } */
 
 /* Floats */
-.author {
+/* .author {
   float: left;
   margin: 20px 10px;
 }
@@ -310,7 +311,7 @@ h1 {
   margin-left: 60px;
 }
 
-/* heading clearfix */
+/* heading clearfix 
 .main-header::after {
   content: "";
   display: block;
@@ -342,7 +343,7 @@ h4 {
   margin-bottom: 30px;
 }
 
-/* rtl floating elements */
+/* rtl floating elements 
 [dir="rtl"] h1 {
   float: right;
 }
@@ -380,4 +381,58 @@ h4 {
   font-family: "Amiri", serif;
   font-weight: 700;
   font-style: normal;
+} */
+
+/* flexbox */
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.author {
+  margin-bottom: 0px;
+}
+
+.author-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+aside {
+  flex: 0 0 350px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-weight: normal;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.related-link {
+  font-weight: bold;
+  font-size: 20px;
 }
