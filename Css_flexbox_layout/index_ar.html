@@ -10,6 +10,12 @@
     <meta name="view port" content="width=device-width, initial-scale=1.0" />
     <title>منصة التعليم التي كنت تنتظرها</title>
     <link href="index_style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -22,28 +28,31 @@
       <header class="main-header">
         <h1>✨ المدرسة ✨</h1>
 
-        <nav aria-label="Primary navigation">
-          <a href="courses.html">Courses</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact us</a>
-        </nav>
+        <div class="nav-content">
+          <nav class="main-nav" aria-label="Primary navigation">
+            <a href="courses.html">الكورسات</a>
+            <a href="#">المدونة</a>
+            <a href="#">تواصل معنا</a>
+          </nav>
 
-        <nav aria-label="Language navigation">
-          <a href="index.html">>English</a>
-          <span class="seberator">|</span>
-          <a href="index_ar.html">اللغه العربية<</a>
-        </nav>
+          <nav class="language-nav" aria-label="Language navigation">
+            <a href="index.html">English</a>
+            <span class="seberator">|</span>
+            <a href="index_ar.html">اللغه العربية</a>
+          </nav>
+        </div>
       </header>
       <article>
         <header class="post-header">
           <h2>منصة التعليم التي كنت تنتظرها</h2>
           <img
+            class="author-image"
             src="img/mohamed-abusrea.jpg"
             alt="picture of author"
             width="50"
             height="50"
           />
-          <p id="author">
+          <p class="author">
             كُتب بواسطة <strong>محمد أبوسريع</strong> في يوم السبت, 2 يوليو 2022
           </p>
 
